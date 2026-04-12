@@ -17,14 +17,12 @@ h2 {
   color: #333;
 }
 
-/* Fila de tarjetas: flex iguala alturas automáticamente */
 .cards-row {
   display: flex;
   gap: 16px;
   align-items: stretch;
 }
 
-/* Cada tarjeta es también un flex container */
 .card {
   flex: 1;
   background: #fff;
@@ -51,7 +49,6 @@ h2 {
   object-fit: cover;
 }
 
-/* El cuerpo apila su contenido en columna */
 .card-body {
   padding: 20px;
   display: flex;
@@ -65,8 +62,6 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* flex: 1 hace que la descripción ocupe el espacio sobrante
-   y empuje el precio y botón hacia abajo */
 .card-desc {
   font-size: 13px;
   color: #666;
