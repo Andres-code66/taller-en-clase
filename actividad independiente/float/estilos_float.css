@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #f5f0eb;
+  color: #2a2a2a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+h1.titulo-version {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 18px;
+  background: #2a2a2a;
+  color: #f5f0eb;
+}
+
+.pagina {
+  background: #fff;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 0 #ccc;
+}
+
+.pagina-titulo {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+  padding: 8px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+/* ===== PAGINACIÓN ===== */
+.paginacion {
+  justify-content: flex-end;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  text-align: right;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: #888;
+  margin: 16px 16px 0 16px;
+  display: flex; /* Activa el modo flexible */
+  gap: 20px;
+  align-items:rigth; /* (Opcional) Los centra verticalmente entre sí */
+}
+
+.paginacion span {
+  margin-left: 20px;
+}
+
+.contenido {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.caja {
+  border: 1px solid #ccc;
+  padding: 14px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.img-placeholder {
+  background: #e8e4de;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+.img-placeholder img {
+  width: 100%;        
+  height: 100%;       
+  object-fit: cover;  
+  object-position: center top; 
+}
+
+
+
+
+
+/* ===== FLOAT: IMÁGENES ===== */
+
+.float-img-izq-grande {
+  float: left;
+  width: 155px;
+  height: 300px;
+  margin: 0 14px 14px 0;
+}
+
+.float-img-izq {
+  float: left;
+  width: 170px;
+  height: 155px;
+  margin: 0 14px 10px 0;
+}
+
+/* Imagen flotante derecha */
+.float-img-der {
+  float: right;
+  width: 155px;
+  height: 155px;
+  margin: 0 0 10px 14px;
+}
+
+.float-img-thumb {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 130px;
+  margin: 0 14px 10px 0;
+}
+
+
+.float-col-izq {
+  float: left;
+  width: 155px;
+  padding-right: 14px;
+}
+
+.float-col-resto {
+  overflow: hidden;
+}
+
+.float-3col {
+  margin-bottom: 14px;
+}
+
+.float-col3 {
+  float: left;
+  width: calc(33.33% - 10px);
+  margin-right: 14px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.float-col3:last-child {
+  margin-right: 0;
+}
+
+/* ===== TIPOGRAFÍA ===== */
+.lorem {
+  color: #444;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.lorem:last-child {
+  margin-bottom: 0;
+}
+
+.audio-bar {
+  background: #f5f0eb;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+}
+
+.play-btn {
+  float: left;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.play-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #fff;
+}
+
+.audio-progress {
+  float: left;
+  width: calc(100% - 100px);
+  margin-top: 10px;
+}
+
+.progress-track {
+  height: 3px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.progress-fill {
+  width: 5%;
+  height: 100%;
+  background: #2a2a2a;
+  border-radius: 2px;
+}
+
+.audio-time {
+  float: right;
+  font-size: 10px;
+  font-family: 'Courier New', monospace;
+  color: #888;
+  margin-top: 4px;
+}
+
+.separador {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #bbb;
+  padding: 10px 0;
+}
